@@ -2,8 +2,7 @@
   programs.nixvim = {
     keymaps = [
       {
-        mode = "n";
-        key = "<leader>n";
+        key = "<leader>nt";
         action = ":Neotree action=focus reveal toggle<CR>";
         options.silent = true;
       }

@@ -11,13 +11,15 @@ in{
     ./vimPlugins/lsp.nix
     ./vimPlugins/cmp.nix
     ./vimPlugins/neotree.nix
+    ./vimPlugins/telescope.nix
   ];
 
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
     plugins.lualine.enable = true; 
-	
+    globals.mapleader = " ";
+
     colorschemes.tokyonight = {
       enable = true;
       transparent = true;
@@ -32,6 +34,17 @@ in{
     plugins = {
       transparent = {	
 	enable = true;
+	settings = {
+	  exclude_groups = [ ];
+	  extra_groups = [
+	    "BufferLineTabClose"
+	    "BufferLineBufferSelected"
+	    "BufferLineFill"
+	    "BufferLineBackground"
+	    "BufferLineSeparator"
+	    "BufferLineIndicatorSelected"
+	  ];
+	};
       };
     };
 
