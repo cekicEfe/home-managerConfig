@@ -16,6 +16,7 @@
       pkgs.btop
       pkgs.tor-browser
       pkgs.ranger
+      pkgs.mesa-demos
     ];
   };
 
@@ -28,10 +29,6 @@
   programs.bash = 
   {
     enable = true;
-    shellAliases =
-    {
-      opgldev = "TMPDIR=$PWD nix-shell -p assimp glfw imgui freetype";
-    };
   };
 
 }

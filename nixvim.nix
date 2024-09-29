@@ -9,7 +9,6 @@ in{
   imports = [
     nixvim.homeManagerModules.nixvim
     ./vimPlugins/lsp.nix
-    ./vimPlugins/cmp.nix
     ./vimPlugins/neotree.nix
     ./vimPlugins/telescope.nix
   ];
