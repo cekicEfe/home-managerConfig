@@ -11,6 +11,8 @@ in{
     ./vimPlugins/lsp.nix
     ./vimPlugins/neotree.nix
     ./vimPlugins/telescope.nix
+    ./vimPlugins/cmp.nix
+    ./vimPlugins/floaterm.nix
   ];
 
   programs.nixvim = {
